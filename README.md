@@ -7,11 +7,14 @@ Please do make sure you install [python](https://www.python.org/downloads/) and
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
+## Prerequesite
+Make sure you have these installed before carry out reading:
+
 ```bash
-pip install foobar
+pip install pandas
 ```
 
-## Usage
+## Example 01
 
 ```python
 import foobar
