@@ -15,6 +15,7 @@ pip install pandas
 ```
 
 ## Example 01
+explain the code in English,
 
 ```python
 import foobar
