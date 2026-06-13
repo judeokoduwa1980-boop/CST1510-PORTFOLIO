@@ -5,7 +5,7 @@ My name is Jude Okoduwa with student number M01113955
 ## Week 1
 Please do make sure you install [python](https://www.python.org/downloads/) and 
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pandas.
 
 ## Prerequesite
 Make sure you have these installed before carry out reading:
@@ -15,35 +15,38 @@ pip install pandas
 ```
 
 ## Example 01
-explain the code in English,
+This code asks users for their name, interest, nationality, course and experience and then print out the corresponding user information. I learnt here how to create user inputs.,
 
 ```python
-import foobar
+print("================================")
+print("USER INFORMATION")
+print("================================")
+name = input("Name: ")
+interest = input("Interest: ")
+Nationality = input("Nationality: ")
+Course = input("Course: ")
+Experience = input("Experience: ")
 
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+print("Name: ", name)
+print("Interest: ", interest)
+print("Nationality: ", Nationality)
+print("Course: ", Course)
+print("Experience: ", Experience)
 ```
 
 ## Example 02
-explain the code in English,
+This code asks for a username, when its inputed, its asks for an action, either to LOGIN or LOGOUT and then it prints the date, hours, minutes and second you logged in including your username,
 
 ```python
-import foobar
+from datetime import datetime
 
-# returns 'words'
-foobar.pluralize('word')
+username = input("Enter username: ")
+action = input("Enter action (LOGIN/LOGOUT): ")
 
-# returns 'geese'
-foobar.pluralize('goose')
+timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+print(f"[{timestamp}] {action} user={username}")
+
 ```
 
 ## Contributing
@@ -56,3 +59,15 @@ Please make sure to update tests as appropriate.
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+
+
+
+
+
+
+
+
+
+
