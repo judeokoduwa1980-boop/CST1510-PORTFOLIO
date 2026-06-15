@@ -64,8 +64,10 @@ Please make sure to update tests as appropriate.
 
 ## Week 2
 
+This week, i learnt Python's **Conditional statements (if, elif, else)**, **loops (for, while)** and basic **list** operations
+
 ## Example 01
-This code asks users for their name, interest, nationality, course and experience and then print out the corresponding user information. I learnt here how to create user inputs.,
+This code is s password checker. it checks if the password inputed is weak, moderate or strong. So it asks users to input a password, if the password length is greater than or equal to 12, it displays Strong, else if the password's length is greater than or equal to 8, it displays moderate, and else it prints weak.
 
 ```python
 password = input('Enter your password: ')
@@ -79,7 +81,8 @@ else:
 ```
 
 ## Example 02
-This code asks for a username, when its inputed, its asks for an action, either to LOGIN or LOGOUT and then it prints the date, hours, minutes and second you logged in including your username,
+This code is used to calculate **Body mass index (BMI)** 
+It prompts users to input their weight in pounds and also their height in inches, then it converts weight into metrics by multiplying by 0.45359237, also coverts heights in inches into meters by multiplying by 0.0254. The resultant weight is then didvided by the height to give the BMI and the result printed. if the bmi < 18.5, it prints overweight, else if it is <= 25, it prints normal, else it prints obese.
 
 ```python
 weight_lb = input("Enter weight in pounds: ")
