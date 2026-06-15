@@ -121,4 +121,62 @@ Please make sure to update tests as appropriate.
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
+## Week 3
+
+This week, I learnt about **Slicing in lists** **Defining and using functions** **Lambda expressions for concise coding** **Working with multidimensional lists (nested lists)**
+
+## Example 01
+
+
+```python
+
+def largest_number_variable(*args):
+    if not args:
+        return None
+    largest = args[0]
+    for num in args:
+        if num > largest:
+            largest = num
+    return largest
+def main():
+    print("Find the Largest Number")
+    numbers = input("Enter numbers separated by spaces: ")
+    num_list = [float(num) for num in numbers.split()]
+    largest = largest_number_variable(*num_list)
+    print(f"The largest number is: {largest}")
+if __name__ == "__main__":    main()
+
+
+```
+
+## Example 02
+This code is used to calculate **Body mass index (BMI)** 
+It prompts users to input their weight in pounds and also their height in inches, then it converts weight into metrics by multiplying by 0.45359237, also coverts heights in inches into meters by multiplying by 0.0254. The resultant weight is then didvided by the height to give the BMI and the result printed. if the bmi < 18.5, it prints overweight, else if it is <= 25, it prints normal, else it prints obese.
+
+```python
+
+def sublist(list1, list2, list3):
+    return True if list2 in list1 else False
+
+list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list2 = [1, 2, 3]
+list3 = [4, 5, 6]
+
+print(sublist(list1, list2, list3))
+
+
+
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
 
