@@ -126,7 +126,8 @@ Please make sure to update tests as appropriate.
 This week, I learnt about **Slicing in lists** **Defining and using functions** **Lambda expressions for concise coding** **Working with multidimensional lists (nested lists)**
 
 ## Example 01
-
+In this program, we are told to find the largest number, but we don't know the number of values.
+so we created a function with variable-arguments length. In this code, it prompts the user to enter numbers seperated by spaces and then finds the largest number from the numbers listed.
 
 ```python
 
@@ -150,8 +151,7 @@ if __name__ == "__main__":    main()
 ```
 
 ## Example 02
-This code is used to calculate **Body mass index (BMI)** 
-It prompts users to input their weight in pounds and also their height in inches, then it converts weight into metrics by multiplying by 0.45359237, also coverts heights in inches into meters by multiplying by 0.0254. The resultant weight is then didvided by the height to give the BMI and the result printed. if the bmi < 18.5, it prints overweight, else if it is <= 25, it prints normal, else it prints obese.
+In this code I learnt about multi-dimensional lists. The object [1, 2, 3] is not one of the main elements of list1. List1 contains only integers (1, 2, 3..) and not the list [1, 2, 3], since it doesn't contain in list1, the result is False.
 
 ```python
 
