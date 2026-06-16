@@ -151,7 +151,7 @@ if __name__ == "__main__":    main()
 ```
 
 ## Example 02
-In this code I learnt about multi-dimensional lists. The object [1, 2, 3] is not one of the main elements of list1. List1 contains only integers (1, 2, 3..) and not the list [1, 2, 3], since it doesn't contain in list1, the result is False.
+In this code I learnt about multi-dimensional lists. The object [1, 2, 3] is not one of the main elements of list1. List1 contains only integers (1, 2, 3..) and not the list [1, 2, 3], since list2 [1, 2, 3] is not contained in list1, the result is False.
 
 ```python
 
@@ -181,21 +181,202 @@ Please make sure to update tests as appropriate.
 
 ## Week 4
 
-In this week 4, I learnt about **Strings and Regular Expressions**
+In this week 4, I learnt about **Strings and Regular Expressions** I learnt about strip(), lower(), startswith(), len(), isdigit(), split(), count(), title(), any(), in, isalpha(), all(), isupper(), islower(), ord(), chr(), find(), replace(), join(), centre().
 
 ## Example 01
+In this program, we count how many times each keyword appears across all feedback, using the method lower() and count(). When the code is run, the feedback, "great" was used 3 times, "quality" was used 3 times and "delivery" 2 times.
 
 ```python
 
+feedback = [
+    "The product quality is great",
+    "Fast delivery but poor quality",
+    "Great product and great delivery",
+    "Quality could be better"
+]
 
+keywords = ['great', 'quality', 'delivery']
 
+# Join all feedback into one string (lowercase), then count each keyword
+
+all_feedback = " ".join(feedback).lower()
+keywords_count = {keyword: all_feedback.count(keyword) for keyword in keywords}
+print(keywords_count)
+
+**OUTPUT**
+
+{'great': 3, 'quality': 3, 'delivery': 2} 
 ```
 
 ## Example 02
+This program Counts how many `ERROR`, `INFO`, and `WARNING` entries there are extracts and prints the **timestamp** from each entry and returns the three counts. When the code is run, we get the output below.
+
+```python
+logs = [
+    "[14:32:05] ERROR: Disk full",
+    "[14:32:10] INFO: Server started",
+    "[14:33:01] WARNING: High memory usage",
+    "[14:33:15] INFO: Backup complete",
+    "[14:34:00] ERROR: Connection refused",
+    "[14:35:22] WARNING: CPU at 90%"
+]
+
+
+
+    # TODO: Loop through each log entry
+    # Extract the timestamp (between the square brackets)
+    # Check if the text after the timestamp starts with ERROR, INFO, or WARNING
+    # Increment the appropriate counter
+    # Print each log with its timestamp
+
+    # Your code here
+
+def classify_logs(logs):
+
+    error_count = 0
+    info_count = 0
+    warning_count = 0
+
+    for log in logs:
+
+        log = log.strip()
+
+        # Extract timestamp
+        timestamp = log.split("]")[0] + "]"
+        print("Timestamp:", timestamp)
+
+        # Check log type
+        if "ERROR" in log:
+            error_count += 1
+
+        elif "INFO" in log:
+            info_count += 1
+
+        elif "WARNING" in log:
+            warning_count += 1
+
+    return error_count, info_count, warning_count
+
+
+logs = [
+    "[14:32:05] ERROR: Disk full",
+    "[14:32:10] INFO: Server started",
+    "[14:33:01] WARNING: High memory usage",
+    "[14:33:15] INFO: Backup complete",
+    "[14:34:00] ERROR: Connection refused",
+    "[14:35:22] WARNING: CPU at 90%"
+]
+
+errors, infos, warnings = classify_logs(logs)
+
+print("\nERROR:", errors)
+print("INFO:", infos)
+print("WARNING:", warnings)
+
+**OUTPUT**
+Timestamp: [14:32:05]
+Timestamp: [14:32:10]
+Timestamp: [14:33:01]
+Timestamp: [14:33:15]
+Timestamp: [14:34:00]
+Timestamp: [14:35:22]
+
+ERROR: 2
+INFO: 2
+WARNING: 2
+
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/) 
+
+
+
+## Week 5
+
+This week, I learnt about File handling and Data structure- 
+## Example 01
+
+In this example, I created a program that writes a shopping list to "shopping.txt" (5 items, one per line),
+reads the file and prints "You need to buy: [item]" for each item and then counts and displays the total number of items.
+
 
 ```python
 
+with open("shopping.txt", "w") as file:
+    file.write("Milk\n")
+    file.write("Bread\n")
+    file.write("Eggs\n")
+    file.write("Apples\n")
+    file.write("Rice\n")
 
+# Step 2: Read the file and print each item
+with open("shopping.txt", "r") as file:
+    items = file.readlines()
+
+for item in items:
+    print(f"You need to buy: {item.strip()}")
+
+# Step 3: Count and display the total number of items
+print(f"\nTotal number of items: {len(items)}")
+
+**OUTPUT**
+
+You need to buy: Milk
+You need to buy: Bread
+You need to buy: Eggs
+You need to buy: Apples
+You need to buy: Rice
+
+Total number of items: 5
+```
+
+## Example 02
+In this program, I created a tuple with 3 movies and their release years and printed "The oldest movie, "All movie titles" and also tried to change a year, which caused an error.
+
+```python
+
+movies = (
+    ("Inception", 2010),
+    ("Matrix", 1999),
+    ("Interstellar", 2014)
+)
+
+# Find the oldest movie
+oldest_movie = min(movies, key=lambda movie: movie[1])
+
+# Print the oldest movie
+print("Oldest movie:", oldest_movie[0], "-", oldest_movie[1])
+
+# Print all movie titles
+print("\nMovie titles:")
+for title, year in movies:
+    print(title)
+
+# Try to change a year (this will cause an error)
+try:
+    movies[0][1] = 2011
+except TypeError as e:
+    print("\nError:", e)
+
+**output**
+
+Oldest movie: Matrix - 1999
+
+Movie titles:
+Inception
+Matrix
+Interstellar
+
+Error: 'tuple' object does not support item assignment
 
 
 ```
@@ -210,6 +391,5 @@ Please make sure to update tests as appropriate.
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
 
 
