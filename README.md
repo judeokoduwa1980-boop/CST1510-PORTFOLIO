@@ -11,7 +11,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pandas.
 Make sure you have these installed before carry out reading:
 
 ```bash
-pip install pandas 
+pip install pandas  
 ```
 
 ## Example 01
