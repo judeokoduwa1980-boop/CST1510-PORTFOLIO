@@ -49,16 +49,7 @@ print(f"[{timestamp}] {action} user={username}")
 
 ```
 
-## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
 
 
 
@@ -110,16 +101,7 @@ else:
 
 ```
 
-## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Week 3
 
@@ -168,16 +150,7 @@ print(sublist(list1, list2, list3))
 
 ```
 
-## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Week 4
 
@@ -286,17 +259,6 @@ INFO: 2
 WARNING: 2
 
 ```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/) 
 
 
 
