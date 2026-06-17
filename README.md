@@ -32,6 +32,18 @@ print("Interest: ", interest)
 print("Nationality: ", Nationality)
 print("Course: ", Course)
 print("Experience: ", Experience)
+
+**OUTPUT**
+
+================================
+USER INFORMATION
+================================
+Name:  Jude
+Interest:  Security
+Nationality:  UK
+Course:  Cybersecurity
+Experience:  Beginner
+
 ```
 
 ## Example 02
@@ -46,6 +58,10 @@ action = input("Enter action (LOGIN/LOGOUT): ")
 timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 print(f"[{timestamp}] {action} user={username}")
+
+**OUTPUT**
+
+[2026-06-13 11:38:55] LOGIN user=Jude
 
 ```
 
@@ -69,6 +85,10 @@ elif len(password) >=8:
     print('Moderate')
 else:
     print('Weak')
+
+**OUTPUT**
+
+Strong
 ```
 
 ## Example 02
@@ -98,6 +118,11 @@ elif bmi <= 30.0:
     print("Overweight")
 else:
     print("Obese")
+
+**OUTPUT**
+
+BMI: 93.74
+Obese
 
 ```
 
@@ -129,6 +154,10 @@ def main():
     print(f"The largest number is: {largest}")
 if __name__ == "__main__":    main()
 
+**OUTPUT**
+
+Find the Largest Number
+The largest number is: 100.0
 
 ```
 
@@ -146,7 +175,9 @@ list3 = [4, 5, 6]
 
 print(sublist(list1, list2, list3))
 
+**OUTPUT**
 
+False
 
 ```
 
